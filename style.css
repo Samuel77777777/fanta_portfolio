@@ -125,9 +125,9 @@ header .scroll-bar{
 .home{
     display: flex;
     align-items: center;
-    background:url(../image/home-bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    justify-content: space-around;
+    
+
 
 }
 
@@ -304,46 +304,34 @@ header .scroll-bar{
     background:#f9f9f9;
 }
 
-.portfolio .box-container{
+ .box-containers{
     display: flex;
-    align-items: center;
+
     justify-content: center;
     flex-wrap: wrap;
     gap:20px;
 }
 
-.portfolio .box-container .box{
+.boxes{
      
   width: 500px;
   height: 500px;
     border-radius: .5rem;
     border:.1rem solid rgba(0,0,0,.2);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-
-
 }
 
-.portfolio .box-container .box img{
-    height: 100%;
 
-    object-fit: cover;
+
+
+.boxes img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
     object-position: center;
 
 }
 
-.portfolio .box-container .box .info{
-    position: absolute;
-    top:-100%; left: 0;
-    background:rgba(255, 71, 87,.8);
-    color:#fff;
-    height: 100%;
-    width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-size: 3.5rem;
-}
 
 
 
@@ -353,9 +341,14 @@ header .scroll-bar{
     top:0;
 }
 
-.portfolio .box-container .box:hover img{
+ .boxes:hover img{
     transform: scale(1.2);
-        border:.1rem solid rgba(0,0,0,.2);
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+
+        
+
 }
 
 .contact .row{
